@@ -1,0 +1,7 @@
+{
+  "name": "pone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
