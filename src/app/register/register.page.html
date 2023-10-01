@@ -9,7 +9,7 @@
     <img id="imginicio" src="../../assets/logoincio.png" alt="">
 
     <ion-card>
-      <ion-card-title style="font-size: 40px;">Inicio de Sesion</ion-card-title>
+      <ion-card-title style="font-size: 40px;">Registor usuario</ion-card-title>
       <ion-card-content>
         <!-- Campo de email -->
         <ion-input type="email" fill="solid" label="Correo Electronico" labelPlacement="floating"
@@ -21,15 +21,21 @@
         <ion-input id="password-input" type="password" label="Contraseña" labelPlacement="floating" [counter]="true"
           maxlength="20" [counterFormatter]="customCounterFormatter" [(ngModel)]="password"></ion-input>
         <br>
+
+        <!-- Campo de contraseña -->
+        <ion-input id="password-input" type="password" label="Repita la Contraseña" labelPlacement="floating"
+          [counter]="true" maxlength="20" [counterFormatter]="customCounterFormatterdos"
+          [(ngModel)]="passworddos"></ion-input>
+        <br>
+
         <!-- Boton de inicio de session -->
-        <ion-button color="success" (click)="iniciarSesion()">Iniciar Session</ion-button>
+        <ion-button color="success" (click)="registrousuario()">Registarse</ion-button>
 
         <br>
-        <ion-label>Aun no tines una cuenta?</ion-label>
-        <!-- Boton de navegacion para ir al registro-->
+        <ion-label>Ya tines una cuneta?</ion-label>
+        <!-- Boton para nevegar al inicio de session-->
 
-        <ion-button color="success" (click)="navegarinicio()">Registrarse</ion-button>
-
+        <ion-button color="success" (click)="navegarinicio()">Iniciar Session</ion-button>
 
       </ion-card-content>
     </ion-card>
